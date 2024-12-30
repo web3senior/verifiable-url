@@ -1,0 +1,53 @@
+figure.logo {
+  filter: drop-shadow(0px 1.70362px 4.51459px rgba(0, 0, 0, 0.25));
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  img {
+    will-change: filter;
+    width: 96px;
+    transition: filter 300ms;
+    &:hover {
+      filter: drop-shadow(0 0 2em #fd166b5d);
+    }
+  }
+
+  figcaption {
+    font-size: 14px;
+  }
+}
+
+.card {
+  > div {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+  }
+  to {
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 2s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.code {
+  background-color: #F8E71C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
